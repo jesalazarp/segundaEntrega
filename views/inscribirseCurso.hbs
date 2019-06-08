@@ -1,0 +1,19 @@
+{{>headerAspirante}}
+    <p>
+        <h3>Formulario para inscribirse en un curso</h3>
+        <form action = '/inscribirCurso' method='post'>
+        <table>
+         <tbody>   
+         <tr><td>Documento de Identidad: </td><td><input type = "number" name="documento" min="1" max="999999999" required></td></tr>
+         <tr><td>Nombre:</td><td> <input type = "text" name="nombre" required></td></tr>
+         <tr><td>Correo electronico:</td><td> <input type = "email" name="correo" oninvalid="setCustomValidity('Debe ingresar un email válido')" oninput="setCustomValidity('')" placeholder="usuario@servidor.com" required></td></tr>
+         <tr><td>Telefono:</td><td> <input type = "number" name="telefono"></td></tr>
+         <tr><td>Lista Cursos: </td><td>                     
+                {{{selectLstCursos}}}
+            </td></tr>
+
+         </tbody></table>
+         <button>Enviar</button>
+         </form>
+    </p>
+{{>footer}}

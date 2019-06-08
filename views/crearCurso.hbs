@@ -1,0 +1,24 @@
+{{>headerCoordinador}}
+    <p>
+        <h3>Creacion de Cursos</h3>
+        <form action = '/creaCurso' method='post'>
+        <table>
+         <tbody>   
+         <tr><td>id: </td><td><input type = "text" name="id"></td></tr>
+         <tr><td>nombre:</td><td> <input type = "text" name="nombre"></td></tr>
+        <tr><td>descripcion: </td><td><input type = "text" name="descripcion" size ="100"></td></tr>
+        <tr><td>modalidad: </td><td><select name="modalidad">
+                            <option value="virtual">Virtual</option>
+                            <option value="presencial">Presencial</option>
+                         </select>
+        </td></tr>
+        <tr><td>valor:</td> <td><input type = "text" name="valor"></td></tr>
+        <tr><td>intensidad (horas):</td><td> <input type = "number" name="intensidad"></td></tr>
+        </tbody></table>
+        <button>Crear</button>
+        </form>
+    </p>
+
+
+
+{{>footer}}
